@@ -2,6 +2,7 @@ from pathlib import Path
 import openai
 import streamlit as st
 from PIL import Image
+import os
 
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -97,7 +98,10 @@ st.write(
 st.title("ChatGPT-like clone")
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
-
+st.write(
+    "Has environment variables been set:",
+    os.environ["OPENAI_API_KEY"] == st.secrets["OPENAI_API_KEY"],
+)
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
 
