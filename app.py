@@ -102,6 +102,7 @@ st.write(
     "Has environment variables been set:",
     os.environ["OPENAI_API_KEY"] == st.secrets["OPENAI_API_KEY"],
 )
+print(f'OS ENVIRON: {os.environ["OPENAI_API_KEY"]}\nSTREAMLIT SECRET: {st.secrets["OPENAI_API_KEY"]}')
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-3.5-turbo"
 
