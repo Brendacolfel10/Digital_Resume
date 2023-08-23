@@ -22,6 +22,7 @@ EMAIL = "Brenda.colfel10@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/brenda-colorado-felix-b28413263/",
     "Github": "https://github.com/Brendacolfel10",
+    "Replit": "https://replit.com/@BrendaColorado",
 }
 
 
@@ -91,7 +92,9 @@ st.write(
 """
 )
 
-#---- chatGPT---- #
+
+
+#--- chatGPT ---
 
 
 
